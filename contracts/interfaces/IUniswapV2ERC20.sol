@@ -1,4 +1,7 @@
-pragma solidity >=0.5.0;
+/*SPDX-License-Identifier: GPL-3.0-only
+SPDXVersion: SPDX-2.2
+SPDX-FileCopyrightText: github.com/Uniswap/uniswap-v2-core */
+pragma solidity =0.5.16;
 
 interface IUniswapV2ERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);

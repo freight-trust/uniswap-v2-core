@@ -1,4 +1,7 @@
-pragma solidity =0.5.16;
+/*SPDX-License-Identifier: GPL-3.0-only
+SPDXVersion: SPDX-2.2
+SPDX-FileCopyrightText: github.com/Uniswap/uniswap-v2-core */
+pragma solidity =>0.5.16 <0.6.0;
 
 import './interfaces/IUniswapV2ERC20.sol';
 import './libraries/SafeMath.sol';
@@ -6,8 +9,10 @@ import './libraries/SafeMath.sol';
 contract UniswapV2ERC20 is IUniswapV2ERC20 {
     using SafeMath for uint;
 
-    string public constant name = 'Uniswap V2';
-    string public constant symbol = 'UNI-V2';
+// probably a better SYMBOL than RESWP 
+
+    string public constant name = 'RelaySwap';
+    string public constant symbol = 'RESWP';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;
@@ -15,7 +20,8 @@ contract UniswapV2ERC20 is IUniswapV2ERC20 {
 
     bytes32 public DOMAIN_SEPARATOR;
     // keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)");
-    bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
+    // @dev -- CHANGE 
+    bytes32 public constant PERMIT_TYPEHASH = 0x000 ; // 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
     mapping(address => uint) public nonces;
 
     event Approval(address indexed owner, address indexed spender, uint value);
