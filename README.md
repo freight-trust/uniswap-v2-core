@@ -1,5 +1,13 @@
-# Uniswap V2
+#  RelaySwap - a UniSwapV2 Layer2 Protocol Enhancement 
 
+> Notice: Read the Spec for [Relay Swap](https://github.com/freight-trust/relayswap)
+
+## NOTICE:
+
+Work In Progress - No Audit has been done yet
+
+
+## Original UniSwapV2 ReadMe
 [![Actions Status](https://github.com/Uniswap/uniswap-v2-core/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-core/actions)
 [![Version](https://img.shields.io/npm/v/@uniswap/v2-core)](https://www.npmjs.com/package/@uniswap/v2-core)
 
